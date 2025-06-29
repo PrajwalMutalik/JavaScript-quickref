@@ -4,8 +4,6 @@ A curated cheat sheet for modern JavaScript — covering key functions, methods,
 
 > ✅ Perfect for revision, interviews, or keeping as a developer handbook.
 
----
-
 ## 📌 Table of Contents
 - [🔤 String Methods](#-string-methods)
 - [🔢 Number & Math](#-number--math)
@@ -17,9 +15,9 @@ A curated cheat sheet for modern JavaScript — covering key functions, methods,
 - [🧪 Type Checking](#-type-checking)
 - [💡 Bonus Snippets](#-bonus-snippets)
 
----
 
-## 🔤 String Methods
+
+# 🔤 String Methods
 
 ```js
 const str = "Hello World";
