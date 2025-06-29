@@ -5,15 +5,16 @@ A curated cheat sheet for modern JavaScript — covering key functions, methods,
 > ✅ Perfect for revision, interviews, or keeping as a developer handbook.
 
 ## 📌 Table of Contents
-- [🔤 String Methods](#-string-methods)
-- [🔢 Number & Math](#-number--math)
-- [📚 Arrays](#-arrays)
-- [📦 Objects](#-objects)
-- [🧰 Utility & Built-ins](#-utility--built-ins)
-- [⏲️ Timers](#️-timers)
-- [🌐 Browser APIs](#-browser-apis)
-- [🧪 Type Checking](#-type-checking)
-- [💡 Bonus Snippets](#-bonus-snippets)
+- [String Methods](#-string-methods)
+- [Number & Math](#-number--math)
+- [Arrays](#-arrays)
+- [Objects](#-objects)
+- [Utility & Built-ins](#-utility--built-ins)
+- [Timers](#-timers)
+- [Browser APIs](#-browser-apis)
+- [Type Checking](#-type-checking)
+- [Bonus Snippets](#-bonus-snippets)
+
 
 
 
@@ -31,10 +32,12 @@ str.endsWith("ld");       // true
 str.slice(0, 5);          // "Hello"
 str.split(" ");           // ["Hello", "World"]
 str.trim();               // removes whitespace
+```
 
----
-## 🔢 Number & Math
 
+# 🔢 Number & Math
+
+```js
 Number("42");           // 42
 parseInt("42.9");       // 42
 parseFloat("42.9");     // 42.9
@@ -44,10 +47,11 @@ Math.ceil(4.1);         // 5
 Math.round(4.6);        // 5
 Math.max(1, 4, 6);      // 6
 Math.random();          // 0 to 1
+```
 
----
-## 📚 Arrays
+# 📚 Arrays
 
+```js
 const arr = [1, 2, 3, 4];
 
 // Modification
@@ -67,11 +71,12 @@ arr.reduce((a,b) => a + b, 0); // sum
 
 // Spread
 const copy = [...arr];
+```
 
----
 
-## 📦 Objects
+# 📦 Objects
 
+```js
 const user = { name: "Prajwal", age: 22 };
 
 // Access
@@ -86,11 +91,12 @@ delete user.age;
 Object.keys(user);      // ['name', 'email']
 Object.values(user);    // ['Prajwal', 'a@b.com']
 Object.entries(user);   // [['name', 'Prajwal'], ['email', 'a@b.com']]
+```
 
----
 
-## 🧰 Utility & Built-ins
+# 🧰 Utility & Built-ins
 
+```js
 JSON.stringify(obj);    // object → JSON string
 JSON.parse(jsonStr);    // JSON string → object
 
@@ -99,11 +105,11 @@ now.getFullYear();      // 2025
 
 typeof null;            // "object" (quirk)
 typeof undefined;       // "undefined"
+```
 
----
+# ⏲️ Timers
 
-## ⏲️ Timers
-
+```js
 setTimeout(() => {
   console.log("After 1 sec");
 }, 1000);
@@ -113,12 +119,12 @@ const interval = setInterval(() => {
 }, 1000);
 
 clearInterval(interval);  // stop interval
+```
 
----
 
-## 
-🌐 Browser APIs
+# 🌐 Browser APIs
 
+```js
 console.log("Debug");
 
 alert("Hello!");
@@ -130,19 +136,20 @@ window.innerWidth;
 
 document.getElementById("myId");
 document.querySelector(".class");
+```
 
----
 
-## 🧪 Type Checking
+# 🧪 Type Checking
 
+```js
 typeof "hello";         // "string"
 Array.isArray([]);      // true
 value === null;         // null check
 value !== undefined;    // defined check
+```
 
----
 
-## 💡 Bonus Snippets
+# 💡 Bonus Snippets
 
 // Swap variables
 [a, b] = [b, a];
